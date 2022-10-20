@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Latitude</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-light">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Latitude</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Plots <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="visualisations/temperature.html">Max Temperature</a></li>
+                    <li><a href="visualisations/humidity.html">Humidity</a></li>
+                    <li><a href="visualisations/cloudiness.html">Cloudiness</a></li>
+                    <li><a href="visualisations/wind.html">Wind Speed</a></li>
+                </ul>
+                </li>
+                <li><a href="visualisations/comparison.html">Comparison</a></li>
+                <li><a href="visualisations/data.html">Data</a></li>
+            </ul>
+        </div>
+    </nav>
+        
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-6">
+                <div class="box" style="padding-bottom: 10px;">
+                    <h3 class="title">Summary: Latitude vs. X</h3>
+                    <hr>
+                    <img src="Resources/assets/images/Fig1.png" class="img-thumbnail float-left" alt="Max Temperature Graph">
+                    <p> The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, 
+                        we first pulled data from OpenWeatherMap API to assemble the dataset on over 500 cities.</p>
+                      <br>
+                    <p> After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. 
+                        Factors we looked at included: temperature,cloudiness, wind speed, and humidity.
+                        This site provides the source data and visualisations created as part of the analysis, as well as 
+                        explanations and descriptions of any trends and correlations witnessed.</p>
+                      <br>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6">
+                <div class="box">
+                    <h3 class="title">Visualisations</h3>
+                    <hr>
+                    <div class="container">
+                        <div class="row" style="padding-bottom: 30px;">
+                            <div class="col-md-2">
+                                <a href="visualisations/temperature.html">
+                                <img class="img-thumbnail" src="Resources/assets/images/Fig1.png" alt="Max Temperature Graph">
+                                </a>
+                            </div>
+                            <div class="col-md-2">
+                                <a href="visualisations/humidity.html">
+                                <img class="img-thumbnail" src="Resources/assets/images/Fig2.png" alt="Humidity Graph">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row" style="padding-bottom: 30px;">
+                            <div class="col-md-2">
+                                <a href="visualisations/cloudiness.html">
+                                <img class="img-thumbnail" src="Resources/assets/images/Fig3.png" alt="Cloudiness Graph">
+                                </a>
+                                <!-- <div class="title">vs. Cloudiness</div> -->
+                            </div>
+                            <div class="col-md-2">
+                                <a href="visualisations/wind.html">
+                                    <img class="img-thumbnail" src="Resources/assets/images/Fig4.png" alt="Wind Speed Graph">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
